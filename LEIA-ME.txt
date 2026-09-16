@@ -1,0 +1,34 @@
+DASH DE FATURAS DE ENERGIA - PUBLICACAO AUTOMATICA
+===================================================
+
+COMO FUNCIONA
+- A cada 3 horas, a tarefa do Windows "Dash Faturas Energia 3h" roda sozinha:
+  regenera o dash (Protheus + PDFs + planilha), copia para index.html e publica
+  no GitHub Pages.
+- No proprio dash tem o botao "🔄 Atualizar" (canto superior direito) que recarrega
+  a versao mais nova ja publicada, e o carimbo "Atualizado em DD/MM HH:MM".
+- Para forcar na hora (sem esperar as 3h): rode
+  "monitor-faturas-energia\Publicar Dash Faturas.bat" (1 clique).
+
+LINK (depois de conectar - passo abaixo):
+  https://fernandoteodoro-stack.github.io/faturas-energia/
+
+>>> PASSO UNICO (so na primeira vez) - conectar ao GitHub <<<
+1. Abra o GitHub Desktop.
+2. File > Add local repository... > selecione esta pasta:
+   C:\Users\fernando.teodoro\Desktop\Trabalhos com IA\faturas-energia-pages
+3. Clique em "Publish repository".
+   - Name: faturas-energia
+   - DESMARQUE "Keep this code private"  (o GitHub Pages gratuito precisa ser publico)
+   - Publish.
+4. No site github.com, abra o repositorio faturas-energia >
+   Settings > Pages > Source: "Deploy from a branch" > Branch: main / (root) > Save.
+5. Aguarde ~1 minuto. O link acima passa a funcionar.
+
+Pronto. Dai em diante tudo e automatico (3 em 3h) e o botao "Atualizar" funciona.
+
+OBS
+- A tarefa so roda com voce logado no Windows (precisa do X: e da internet).
+- Para mudar o intervalo ou desligar: Agendador de Tarefas do Windows,
+  tarefa "Dash Faturas Energia 3h".
+- Privacidade: o GitHub Pages e PUBLICO (qualquer pessoa com o link ve os dados).
